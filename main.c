@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "matrix.h"
+#include "matrixOp.h"
 
 int main()
 {
@@ -9,9 +9,9 @@ int main()
   int i,j;
   
   printf("Matrix A:\n"); 
-  for(int i=0;i<3;i++)
+  for(i=0;i<3;i++)
   {
-        for(int j=0;j<3;j++)
+        for(j=0;j<3;j++)
           {
             printf("%d ", A[i][j]);
           }
@@ -19,9 +19,9 @@ int main()
     }
   
   printf("Matrix B:\n"); 
-  for(int i=0;i<3;i++)
+  for(i=0;i<3;i++)
   {
-        for(int j=0;j<3;j++)
+        for(j=0;j<3;j++)
           {
             printf("%d ", B[i][j]);
           }
@@ -30,9 +30,9 @@ int main()
   
   printf("\nAddition:\n");
   add(A, B, C);
-  for(int i=0;i<3;i++)
+  for(i=0;i<3;i++)
   {
-        for(int j=0;j<3;j++)
+        for(j=0;j<3;j++)
           {
             printf("%d ", C[i][j]);
           }
@@ -41,9 +41,9 @@ int main()
 
   printf("\nSubtraction:\n");
   sub(A, B, C);
-  for(int i=0;i<3;i++)
+  for(i=0;i<3;i++)
   {
-        for(int j=0;j<3;j++)
+        for(j=0;j<3;j++)
           {
             printf("%d ", C[i][j]);
           }
@@ -52,9 +52,9 @@ int main()
   
   printf("\nElement-wise Multiplication:\n");
   eleMul(A, B, C);
-  for(int i=0;i<3;i++)
+  for(i=0;i<3;i++)
   {
-        for(int j=0;j<3;j++)
+        for(j=0;j<3;j++)
           {
             printf("%d ", C[i][j]);
           }
