@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "matrix.h"
+#include "matrixOp.h"
 
 int i,j;
 
@@ -40,5 +40,6 @@ void mul(int A[3][3],int B[3][3],int C[3][3])
 {
   
 }
+
 
 
