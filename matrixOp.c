@@ -25,7 +25,7 @@ void sub(int A[3][3], int B[3][3], int C[3][3])
       } 
 }
 
-void sub(int A[3][3], int B[3][3], int C[3][3]) 
+void eleMul(int A[3][3], int B[3][3], int C[3][3]) 
 {
     for (int i = 0; i < 3; i++)
       {
@@ -40,4 +40,5 @@ void mul(int A[3][3],int B[3][3],int C[3][3])
 {
   
 }
+
 
