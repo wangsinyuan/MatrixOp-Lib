@@ -1,13 +1,13 @@
 #ifndef MATRIX_H
 #define MATRIX_H
 
-int add(int A[3][3], int B[3][3], int result[3][3]);
-int sub(int A[3][3], int B[3][3], int result[3][3]);
-int ele(int A[3][3], int B[3][3], int result[3][3]);
-int det(int A[3][3], int B[3][3], int result[3][3]);
-int adj(int A[3][3], int B[3][3], int result[3][3]);
-int mat(int A[3][3], int B[3][3], int result[3][3]);
-int tra(int A[3][3], int B[3][3], int result[3][3]);
-int inv(int A[3][3], int B[3][3], int result[3][3]);
+void add(int A[3][3], int B[3][3], int C[3][3]);
+void sub(int A[3][3], int B[3][3], int C[3][3]);
+void eleMul(int A[3][3], int B[3][3], int C[3][3]);
+void det(int A[3][3], int B[3][3], int C[3][3]);
+void adj(int A[3][3], int B[3][3], int C[3][3]);
+void mul(int A[3][3], int B[3][3], int C[3][3]);
+void tra(int A[3][3], int B[3][3], int C[3][3]);
+void inv(int A[3][3], int B[3][3], int C[3][3]);
 
 #endif
