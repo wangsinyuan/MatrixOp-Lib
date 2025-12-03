@@ -55,4 +55,19 @@ void tra(int A[3][3], int T[3][3]) {
     }
 }
 
+int inverse(int A[3][3], float inv[3][3]) {
+    int det = det3(A);
+    if(det == 0) return 0;  // 無反矩陣
+
+    int adj[3][3];
+    adjoint(A, adj);
+
+    for(int i = 0; i < 3; i++) {
+        for(int j = 0; j < 3; j++) {
+            inv[i][j] = adj[i][j] / (float)det;
+        }
+    }
+    return 1;
+}
+
 
