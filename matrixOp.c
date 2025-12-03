@@ -47,4 +47,12 @@ void mul(int A[3][3], int B[3][3], int C[3][3]) {
     }
 }
 
+void tra(int A[3][3], int T[3][3]) {
+    for(int i = 0; i < 3; i++) {
+        for(int j = 0; j < 3; j++) {
+            C[j][i] = A[i][j];
+        }
+    }
+}
+
 
