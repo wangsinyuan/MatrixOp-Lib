@@ -60,7 +60,56 @@ int main()
           }
         printf("\n");
     }
-  
-  
+
+   printf("\nMatrix Multiplication A*B:\n");
+   mul(A,B,C);
+   for(i=0;i<3;i++)
+  {
+        for(j=0;j<3;j++)
+          {
+            printf("%d ", C[i][j]);
+          }
+        printf("\n");
+    }
+
+   printf("\nTranspose of A:\n");
+   tra(A,C);
+   for(i=0;i<3;i++)
+  {
+        for(j=0;j<3;j++)
+          {
+            printf("%d ", C[i][j]);
+          }
+        printf("\n");
+    }
+
+  printf("\nDeterminant of A: %d\n", det(A));
+
+  printf("\nAdjoint of A:\n");
+  adj(A,C);
+  for(i=0;i<3;i++)
+  {
+        for(j=0;j<3;j++)
+          {
+            printf("%d ", C[i][j]);
+          }
+        printf("\n");
+    }
+
+  if(inv(A,C_inv)){
+        printf("\nInverse of A:\n");
+        for(i=0;i<3;i++)
+        {
+          for(j=0;j<3;j++)
+            {
+              printf("%.2f ", C[i][j]);
+            }
+          printf("\n");
+         }
+    } 
+  else {
+        printf("\nA is not invertible.\n");
+    }
+
   return 0;
 }
