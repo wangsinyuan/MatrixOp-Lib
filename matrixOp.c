@@ -47,7 +47,7 @@ void mul(int A[3][3], int B[3][3], int C[3][3]) {
     }
 }
 
-void tra(int A[3][3], int T[3][3]) {
+void tra(int A[3][3], int C[3][3]) {
     for(int i = 0; i < 3; i++) {
         for(int j = 0; j < 3; j++) {
             C[j][i] = A[i][j];
@@ -55,19 +55,17 @@ void tra(int A[3][3], int T[3][3]) {
     }
 }
 
-int inverse(int A[3][3], float inv[3][3]) {
-    int det = det3(A);
-    if(det == 0) return 0;  // 無反矩陣
+int inv(int A[3][3], float C[3][3]){
+    int det = det(A);
+    if(det==0) return 0;
 
     int adj[3][3];
-    adjoint(A, adj);
+    adj(A, adj);
 
-    for(int i = 0; i < 3; i++) {
-        for(int j = 0; j < 3; j++) {
-            inv[i][j] = adj[i][j] / (float)det;
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            C[i][j] = adj[i][j]/det;
+            }
         }
-    }
     return 1;
 }
-
-
