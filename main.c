@@ -6,6 +6,7 @@ int main() {
     int B[3][3] = {{2,1,3},{1,2,1},{3,1,2}};
     int C[3][3];
     float C_inv[3][3];
+    int i,j;
 
     printf("Matrix A:\n");
     for(i=0;i<3;i++){
@@ -93,3 +94,4 @@ int main() {
 
     return 0;
 }
+
