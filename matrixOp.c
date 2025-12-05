@@ -91,9 +91,10 @@ int inv(int A[3][3], float C[3][3]) {
 
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {
-            C[i][j] = adjA[i][j] / d;
+            C[i][j] = adjA[i][j] / (float) d;
         }
     }
 
     return 1;
 }
+
