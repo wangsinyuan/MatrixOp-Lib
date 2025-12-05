@@ -68,7 +68,7 @@ int det(int A[3][3], int B[3][3], int result[3][3]) {
     return 0;
 }
 
-int adj(int A[3][3], int B[3][3], int result[3][3]) {
+void adj(int A[3][3], int B[3][3], int result[3][3]) {
     int a11 = A[0][0], a12 = A[0][1], a13 = A[0][2];
     int a21 = A[1][0], a22 = A[1][1], a23 = A[1][2];
     int a31 = A[2][0], a32 = A[2][1], a33 = A[2][2];
@@ -115,4 +115,5 @@ int inv(int A[3][3], float C[3][3]){
         }
     return 1;
 }
+
 
